@@ -1,0 +1,91 @@
+{
+  point: "warning"
+  err: {
+    name: "Error"
+    message: `SUMMARY (1 errors): [aontu/bare_punct]: Cannot resolve value at path $
+
+A bare string holds letters, digits, \`-\` and \`_\`, and nothing else.
+This one holds \`﻿\`, in \`﻿\`. Every other punctuation
+character is either syntax or an error, never silently part of a
+string: a value that needs one is written quoted, and a \`>\` or \`<\`
+that was meant as a bound is written as min(x), max(x), above(x) or
+below(x).
+ 
+Examples:
+  a: team-payments  -> "team-payments"  # \`-\` and \`_\` are text;
+  a: 2026-09-05     -> "2026-09-05"     # ... digits included;
+  a: x=y            -> nil              # \`=\` is not;
+  a: "x=y"          -> "x=y"            # ... so quote it;
+  a: >10            -> nil              # Not an operator: write above(10).
+
+ Cannot resolve value: nil
+  \u001b[34m--> model\\guide\\resend-guide.aontu:1:1
+\u001b[34m  1 | \u001b[0m﻿# Guide entry file: put customizations below the includes. The base guide
+      \u001b[34m^ value was: nil\u001b[0m
+\u001b[34m  2 | \u001b[0m# it includes is generated and overwritten on every build.
+\u001b[34m  3 | \u001b[0m@"@voxgig/apidef/model/guide.aontu"
+`
+    stack: `AontuError: [aontu/bare_punct]: Cannot resolve value at path $
+
+A bare string holds letters, digits, \`-\` and \`_\`, and nothing else.
+This one holds \`﻿\`, in \`﻿\`. Every other punctuation
+character is either syntax or an error, never silently part of a
+string: a value that needs one is written quoted, and a \`>\` or \`<\`
+that was meant as a bound is written as min(x), max(x), above(x) or
+below(x).
+ 
+Examples:
+  a: team-payments  -> "team-payments"  # \`-\` and \`_\` are text;
+  a: 2026-09-05     -> "2026-09-05"     # ... digits included;
+  a: x=y            -> nil              # \`=\` is not;
+  a: "x=y"          -> "x=y"            # ... so quote it;
+  a: >10            -> nil              # Not an operator: write above(10).
+
+ Cannot resolve value: nil
+  \u001b[34m--> model\\guide\\resend-guide.aontu:1:1
+\u001b[34m  1 | \u001b[0m﻿# Guide entry file: put customizations below the includes. The base guide
+      \u001b[34m^ value was: nil\u001b[0m
+\u001b[34m  2 | \u001b[0m# it includes is generated and overwritten on every build.
+\u001b[34m  3 | \u001b[0m@"@voxgig/apidef/model/guide.aontu"
+
+    at NilVal.gen (E:\\voxgig-assessment\\resend-sdk\\.sdk\
+ode_modules\\aontu\\dist\\val\\NilVal.js:58:25)
+    at ListVal.gen (E:\\voxgig-assessment\\resend-sdk\\.sdk\
+ode_modules\\aontu\\dist\\val\\BagVal.js:126:34)
+    at Aontu.generate (E:\\voxgig-assessment\\resend-sdk\\.sdk\
+ode_modules\\aontu\\dist\\aontu.js:190:36)
+    at buildGuide (E:\\voxgig-assessment\\resend-sdk\\.sdk\
+ode_modules\\@voxgig\\apidef\\dist\\guide\\guide.js:161:32)
+    at async Object.generate (E:\\voxgig-assessment\\resend-sdk\\.sdk\
+ode_modules\\@voxgig\\apidef\\dist\\apidef.js:212:32)
+    at async build (E:\\voxgig-assessment\\resend-sdk\\.sdk\
+ode_modules\\@voxgig\\apidef\\dist\\apidef.js:402:16)
+    at async runCli (E:\\voxgig-assessment\\resend-sdk\\.sdk\
+ode_modules\\@voxgig\\apidef\\dist\\cli.js:257:24)`
+    errs: null
+  }
+
+  note: `!! BUILD FAILED !! SUMMARY (1 errors): [aontu/bare_punct]: Cannot resolve value at path $
+
+A bare string holds letters, digits, \`-\` and \`_\`, and nothing else.
+This one holds \`﻿\`, in \`﻿\`. Every other punctuation
+character is either syntax or an error, never silently part of a
+string: a value that needs one is written quoted, and a \`>\` or \`<\`
+that was meant as a bound is written as min(x), max(x), above(x) or
+below(x).
+ 
+Examples:
+  a: team-payments  -> "team-payments"  # \`-\` and \`_\` are text;
+  a: 2026-09-05     -> "2026-09-05"     # ... digits included;
+  a: x=y            -> nil              # \`=\` is not;
+  a: "x=y"          -> "x=y"            # ... so quote it;
+  a: >10            -> nil              # Not an operator: write above(10).
+
+ Cannot resolve value: nil
+  \u001b[34m--> model\\guide\\resend-guide.aontu:1:1
+\u001b[34m  1 | \u001b[0m﻿# Guide entry file: put customizations below the includes. The base guide
+      \u001b[34m^ value was: nil\u001b[0m
+\u001b[34m  2 | \u001b[0m# it includes is generated and overwritten on every build.
+\u001b[34m  3 | \u001b[0m@"@voxgig/apidef/model/guide.aontu"
+`
+}
